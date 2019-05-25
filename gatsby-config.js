@@ -4,31 +4,13 @@ module.exports = {
     description: `Alexander Plavinski is a front end developer from Germany`,
     author: `Alexander Plavinski`,
   },
-  plugins: [
-    `gatsby-plugin-react-helmet`,
+  __experimentalThemes: [
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: '@jxnblk/gatsby-theme-mdx-blog',
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        // name: '',
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
-      },
-    },
-    `gatsby-plugin-typescript`,
-    `gatsby-plugin-styled-components`,
-    `gatsby-plugin-netlify`,
   ],
+  plugins: [`gatsby-plugin-netlify`],
 };
