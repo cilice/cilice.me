@@ -20,8 +20,5 @@
     "start": "gatsby develop",
     "format": "prettier --write src/**/*.{ts,tsx}",
     "serve": "gatsby serve"
-  },
-  "resolutions": {
-    "fsevents": "1.2.9"
   }
 }
