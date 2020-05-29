@@ -1,23 +1,17 @@
 {
-  "name": "@cilice/cilice.me",
-  "private": true,
-  "description": "personal website",
-  "version": "1.0.0",
-  "author": "Alexander Plavinski <hello@cilice.me>",
-  "license": "MIT",
+  "name": "declining",
+  "version": "0.0.0",
   "scripts": {
-    "build": "gatsby build",
-    "start": "gatsby develop",
-    "format": "prettier --write 'src/**/*.js' 'content/**/*.mdx'",
-    "serve": "gatsby serve"
+    "dev": "vite",
+    "build": "vite build"
   },
   "dependencies": {
-    "gatsby": "^2.13.45",
-    "gatsby-theme-blog": "^1.0.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "vue": "^3.0.0-beta.14"
   },
   "devDependencies": {
-    "prettier": "^1.18.2"
+    "@vue/compiler-sfc": "^3.0.0-beta.14",
+    "prettier": "^2.0.5",
+    "typescript": "^3.9.3",
+    "vite": "^0.18.0"
   }
 }
